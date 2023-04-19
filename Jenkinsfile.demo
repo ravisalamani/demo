@@ -1,4 +1,4 @@
-@Library("public@demo") _
+@Library("private@demo") _
 import com.microchip.Utilities
 config            = [:]
 config.server     = "MyLinuxServer"
