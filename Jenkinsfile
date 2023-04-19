@@ -9,7 +9,9 @@ pipeline {
         stage('Hello') {
             steps {
                  script {
-                    utils.notifyPR({cred:"PrecheckInRobot"},"Hello","World")
+                    def conf=[:]
+                    conf.cred="PrecheckInRobot"
+                    utils.notifyPR(conf,"Hello","World")
                     utils.pwd()
                     println "Hello World"
                     //sendMail("Hello World","ravi.salamani@microchip.com")
