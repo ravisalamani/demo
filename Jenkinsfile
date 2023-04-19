@@ -9,7 +9,7 @@ pipeline {
         stage('Hello') {
             steps {
                  script {
-                    utils.notifyPR()
+                    utils.notifyPR({"cred":"PrecheckInRobot"},"Hello","World")
                     utils.pwd()
                     println "Hello World"
                     //sendMail("Hello World","ravi.salamani@microchip.com")
