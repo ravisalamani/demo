@@ -1,9 +1,7 @@
 @Library("public@demo") _
 import com.microchip.Utilities
-precheck                     = [:]
-precheck.skip                = false
-precheck.linux               = [:]
-precheck.linux.server        = "MyLinuxServer"
+config            = [:]
+config.server     = "MyLinuxServer"
 def utils = new Utilities(this)
 pipeline {
     agent any
