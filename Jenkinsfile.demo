@@ -11,8 +11,6 @@ pipeline {
                  script {
                     utils.notifyPR("PrecheckInRobot","Hello","World")
                     utils.pwd()
-                    println "Hello World"
-                    //sendMail("Hello World","ravi.salamani@microchip.com")
                  }
             }
         }
