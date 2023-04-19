@@ -9,7 +9,7 @@ pipeline {
         stage('Hello') {
             steps {
                  script {
-                    //utils.notifyPR("PrecheckInRobot","Hello","World")
+                    utils.notifyPR("PrecheckInRobot","Hello","World")
                     utils.pwd()
                  }
             }
