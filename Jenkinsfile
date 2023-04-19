@@ -1,19 +1,19 @@
-@Library("public@demo") _
-import com.microchip.Utilities
+//@Library("public@demo") _
+//import com.microchip.Utilities
 precheck                     = [:]
 precheck.skip                = false
 precheck.linux               = [:]
 precheck.linux.server        = "MyLinuxServer"
-def utils = new Utilities(this)
+//def utils = new Utilities(this)
 pipeline {
     agent any
     stages {
         stage('Hello') {
             steps {
                  script {
-                    utils.notifyPR()
-                    utils.pwd()
-                    
+                    //utils.notifyPR()
+                    //utils.pwd()
+                    println "Hello World"
                     //sendMail("Hello World","ravi.salamani@microchip.com")
                  }
             }
