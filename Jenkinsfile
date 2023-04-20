@@ -10,7 +10,7 @@ pipeline {
             steps {
                  script {
                     def conf=[:]
-                    conf.cred="PrecheckInRobot"
+                    conf.cred="PrecheckInBot"
                     utils.notifyPR(conf,"Hello","World")
                     utils.pwd()
                     println "Hello World"
